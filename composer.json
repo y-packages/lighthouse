@@ -1,0 +1,38 @@
+{
+    "name": "yaknet/lighthouse",
+    "description": "A lightweight, zero-dependency performance profiler and CLI/HTML flamegraph renderer for PHP.",
+    "keywords": ["profiler", "benchmark", "performance", "flamegraph", "trace", "diagnostics", "resilience", "yaknet"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "YakNet Bilişim",
+            "email": "info@yakhub.com.tr"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "YakNet\\Lighthouse\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YakNet\\Lighthouse\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "analyze": "vendor/bin/phpstan analyze"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}

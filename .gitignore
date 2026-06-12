@@ -1,0 +1,4 @@
+/vendor/
+/.phpunit.cache/
+/lighthouse_report.html
+.env
